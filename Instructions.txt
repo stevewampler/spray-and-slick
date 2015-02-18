@@ -1,0 +1,34 @@
+Notification feed exercise:
+---------------------------
+ 
+Ground Rules:
+-------------
+  Time Limit: 24 Hours
+  Language: Whatever you are most comfortable with.
+  Submitting: Please return code and any accompanying documentation in email to the Boundary engineer administering the test.
+ 
+This exercise has two components. The first is coding a small service. The 
+second is describing the operational requirements and constraints of the 
+solution. 
+ 
+1. Write an HTTP service that has two endpoints:
+ POST /notifications
+   which accepts the following Notification data structure in JSON: 
+     {"user_id": int, "timestamp": int, "message": String}
+   and returns the following:
+     {"id": int, "user_id": int, "timestamp": int, "message": String}
+ GET /notifications/by_user/<user_id>
+   which returns a JSON list of the last N Notifications in time (priority) 
+   order descending
+ 
+2. Describe the operational constraints of your solution. What is going to fail
+  and how are those failures resolved? Roughly how many users will this 
+  solution handle? how many notifications per second?
+ 
+ 
+Bonus points: 
+-------------
+ 
+* Extend the API and service to allow for editing a notification. 
+* Keep track of which notifications have been read and return this information in the GET.
+* Add a persistence layer optimized for access patterns. 
