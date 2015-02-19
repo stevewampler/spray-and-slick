@@ -50,3 +50,21 @@ WebContent/WEB-INF/lib/*
 
 # LittleProxy generates some files
 /lib/
+*.class
+*.log
+
+# sbt specific
+.cache/
+.history/
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+>>>>>>> 47c9a6519e6ec357a7a111d35566f7b8e7182f8e

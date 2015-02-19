@@ -53,3 +53,6 @@ and Dispatch (a Scala HTTP client library). The code is patterned after Oleg Yer
 
 * http://sysgears.com/articles/building-rest-service-with-scala/
 * https://github.com/oermolaev/simple-scala-rest-example
+# spray-and-slick
+An example of using the Scala Spray and Slick libraries to create a RESTful web service.
+>>>>>>> 47c9a6519e6ec357a7a111d35566f7b8e7182f8e
